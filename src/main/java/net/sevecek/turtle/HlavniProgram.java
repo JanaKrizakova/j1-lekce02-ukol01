@@ -10,5 +10,7 @@ public class HlavniProgram {
         zofka = new Turtle();
 
         zofka.penDown();
+
+        zofka.move(100);
     }
 }
