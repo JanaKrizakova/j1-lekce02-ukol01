@@ -55,14 +55,42 @@ public class HlavniProgram {
 
     }
 
+    static void nakresliOsmiuhelnik(Turtle zelva) {
+
+        zelva.penDown();
+
+        for (int i = 0; i < 8; i++) {
+            zelva.turnRight(45);
+            zelva.move(60);
+        }
+
+        //vychozi pozice
+        zelva.turnLeft(60);
+        zelva.penUp();
+    }
+
     public void main(String[] args) {
         Turtle zofka;
 
         zofka = new Turtle();
 
+       /* zofka.penUp();
+        zofka.turnRight(180);
+        zofka.move(200);
+        zofka.turnLeft(180);
+
         nakresliPrasatko(zofka);
 
+        zofka.move(200);
+
+        nakresliPrasatko(zofka);*/
+
+        zofka.penUp();
         zofka.move(100);
+        zofka.turnLeft(90);
+        zofka.move(300);
+
+        nakresliOsmiuhelnik(zofka);
         }
     }
 
