@@ -82,6 +82,26 @@ public class HlavniProgram {
         zelva.penUp();
     }
 
+    static void nakresliSlunicko(Turtle zelva) {
+
+        zelva.penDown();
+
+        for (int i = 0; i < 10; i++) {
+            zelva.turnLeft(90);
+            zelva.move(40);
+            zelva.turnLeft(180);
+            zelva.move(40);
+            zelva.turnLeft(70);
+            zelva.move(20);
+            zelva.turnRight(20);
+            zelva.move(20);
+        }
+
+        //vychozi pozice
+        zelva.turnLeft(130);
+        zelva.penUp();
+    }
+
     public void main(String[] args) {
         Turtle zofka;
 
@@ -110,6 +130,11 @@ public class HlavniProgram {
         zofka.move(250);
 
         nakresliKruh(zofka);
+
+        zofka.turnRight(90);
+        zofka.move(200);
+
+        nakresliSlunicko(zofka);
         }
     }
 
