@@ -65,7 +65,20 @@ public class HlavniProgram {
         }
 
         //vychozi pozice
-        zelva.turnLeft(60);
+        zelva.turnRight(90);
+        zelva.penUp();
+    }
+
+    static void nakresliKruh(Turtle zelva) {
+
+        zelva.penDown();
+
+        for (int i = 0; i < 20; i++) {
+            zelva.move(26);
+            zelva.turnRight(20);
+        }
+        //vychozi pozice
+        zelva.turnLeft(130);
         zelva.penUp();
     }
 
@@ -91,6 +104,12 @@ public class HlavniProgram {
         zofka.move(300);
 
         nakresliOsmiuhelnik(zofka);
+
+        zofka.move(145);
+        zofka.turnRight(90);
+        zofka.move(250);
+
+        nakresliKruh(zofka);
         }
     }
 
