@@ -49,6 +49,10 @@ public class HlavniProgram {
         zelva.turnRight(120);
         zelva.move(100);
 
+        //vychozi pozice
+        zelva.turnLeft(60);
+        zelva.penUp();
+
     }
 
     public void main(String[] args) {
@@ -57,6 +61,8 @@ public class HlavniProgram {
         zofka = new Turtle();
 
         nakresliPrasatko(zofka);
+
+        zofka.move(100);
         }
     }
 
