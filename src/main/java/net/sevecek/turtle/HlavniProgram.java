@@ -2,11 +2,14 @@ package net.sevecek.turtle;
 
 import net.sevecek.turtle.engine.*;
 
+import java.awt.*;
+
 public class HlavniProgram {
 
     static void nakresliPrasatko(Turtle zelva) {
 
         zelva.penDown();
+        zelva.setPenColor(Color.pink);
 
         //predni nohy
         zelva.turnLeft(135);
@@ -19,6 +22,7 @@ public class HlavniProgram {
         zelva.turnLeft(180);
         zelva.move(50);
 
+        // bricho
         zelva.turnRight(135);
         zelva.move(200);
 
@@ -33,9 +37,11 @@ public class HlavniProgram {
         zelva.turnLeft(180);
         zelva.move(50);
 
+        //zadek
         zelva.turnRight(45);
         zelva.move(100);
 
+        //zada
         zelva.turnLeft(90);
         zelva.move(200);
 
@@ -52,7 +58,6 @@ public class HlavniProgram {
         //vychozi pozice
         zelva.turnLeft(60);
         zelva.penUp();
-
     }
 
     static void nakresliOsmiuhelnik(Turtle zelva) {
@@ -91,11 +96,14 @@ public class HlavniProgram {
     static void nakresliSlunicko(Turtle zelva) {
 
         zelva.penDown();
+        zelva.setPenColor(Color.yellow);
 
         for (int i = 0; i < 18; i++) {
-            zelva.move(15);
+            zelva.move(8);
 
             nakresliPaprsek(zelva, 30);
+
+            zelva.move(8);
 
             zelva.turnRight(20);
         }
@@ -106,6 +114,7 @@ public class HlavniProgram {
     static void nakresliDomecek(Turtle zelva) {
 
         zelva.penDown();
+        zelva.setPenColor(Color.gray);
 
         zelva.move(130);
         zelva.turnRight(90);
@@ -116,6 +125,8 @@ public class HlavniProgram {
         zelva.move(100);
 
         //strecha
+        zelva.setPenColor(Color.red);
+
         zelva.turnLeft(120);
         zelva.move(100);
         zelva.turnLeft(120);
@@ -152,6 +163,7 @@ public class HlavniProgram {
         zelva.turnLeft(180);
         zelva.move(105);
 
+        //vychozi pozice
         zelva.penUp();
         zelva.turnLeft(90);
         zelva.move(15);
@@ -173,6 +185,7 @@ public class HlavniProgram {
         zelva.turnRight(70);
         zelva.move(50);
 
+        //vychozi pozice
         zelva.penUp();
         zelva.turnLeft(70);
         zelva.move(15);
@@ -191,6 +204,7 @@ public class HlavniProgram {
         zelva.turnRight(180);
         zelva.move(105);
 
+        //vychozi pozice
         zelva.penUp();
         zelva.turnLeft(90);
         zelva.move(15);
@@ -198,6 +212,9 @@ public class HlavniProgram {
     }
 
     static void nakresliJmeno(Turtle turtle) {
+
+        turtle.setPenColor(Color.black);
+
         nakresliPismenoJ(turtle);
         nakresliPismenoA(turtle);
         nakresliPismenoN(turtle);
