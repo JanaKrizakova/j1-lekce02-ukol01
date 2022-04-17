@@ -108,11 +108,11 @@ public class HlavniProgram {
 
         zelva.penDown();
 
-        zelva.move(150);
+        zelva.move(130);
         zelva.turnRight(90);
         zelva.move(100);
         zelva.turnRight(90);
-        zelva.move(150);
+        zelva.move(130);
         zelva.turnRight(90);
         zelva.move(100);
 
@@ -167,6 +167,47 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.move(400);
         zofka.turnLeft(90);
+
+        nakresliDomecek(zofka);
+
+
+        zofka.move(200);
+        zofka.turnRight(90);
+        zofka.move(300);
+        zofka.turnRight(90);
+
+        nakresliDomecek(zofka);
+
+
+        zofka.turnRight(90);
+        zofka.move(250);
+        zofka.turnRight(90);
+
+        nakresliDomecek(zofka);
+
+        zofka.turnRight(90);
+        zofka.move(250);
+        zofka.turnRight(90);
+
+        nakresliDomecek(zofka);
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(250);
+        zofka.turnRight(90);
+
+        nakresliDomecek(zofka);
+
+        zofka.turnRight(90);
+        zofka.move(250);
+        zofka.turnRight(90);
+
+        nakresliDomecek(zofka);
+
+        zofka.turnRight(90);
+        zofka.move(300);
+        zofka.turnRight(90);
+        zofka.move(200);
 
         nakresliDomecek(zofka);
         }
