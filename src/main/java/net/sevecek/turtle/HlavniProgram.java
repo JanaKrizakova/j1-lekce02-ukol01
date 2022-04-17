@@ -175,9 +175,27 @@ public class HlavniProgram {
         zelva.move(50);
 
         zelva.penUp();
+        zelva.turnLeft(70);
+        zelva.move(15);
+        zelva.turnLeft(90);
+    }
+
+    static void nakresliPismenoN(Turtle zelva) {
+
+        zelva.penDown();
+
+        zelva.move(105);
+        zelva.turnRight(155);
+        zelva.move(115);
+        zelva.turnLeft(155);
+        zelva.move(105);
+        zelva.turnRight(180);
+        zelva.move(105);
+
+        zelva.penUp();
         zelva.turnLeft(90);
         zelva.move(15);
-        zelva.turnLeft(70);
+        zelva.turnLeft(90);
     }
 
     public void main(String[] args) {
@@ -241,6 +259,8 @@ public class HlavniProgram {
         nakresliPismenoJ(zofka);
 
         nakresliPismenoA(zofka);
+
+        nakresliPismenoN(zofka);
         }
     }
 
