@@ -60,12 +60,11 @@ public class HlavniProgram {
         zelva.penDown();
 
         for (int i = 0; i < 8; i++) {
-            zelva.turnRight(45);
             zelva.move(60);
+            zelva.turnRight(45);
+
         }
 
-        //vychozi pozice
-        zelva.turnRight(90);
         zelva.penUp();
     }
 
@@ -73,31 +72,35 @@ public class HlavniProgram {
 
         zelva.penDown();
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 18; i++) {
             zelva.move(26);
             zelva.turnRight(20);
         }
-        //vychozi pozice
-        zelva.turnLeft(130);
+
         zelva.penUp();
+    }
+
+    private static void nakresliPaprsek(Turtle zelva) {
+
     }
 
     static void nakresliSlunicko(Turtle zelva) {
 
         zelva.penDown();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 18; i++) {
+            zelva.move(15);
+
+            //nakresli paprsek
             zelva.turnLeft(90);
-            zelva.move(40);
+            zelva.move(15);
             zelva.turnLeft(180);
-            zelva.move(40);
-            zelva.turnLeft(70);
-            zelva.move(18);
+            zelva.move(15);
+            zelva.turnLeft(90);
+
             zelva.turnRight(20);
-            zelva.move(18);
         }
-        //vychozi pozice
-        zelva.turnLeft(130);
+
         zelva.penUp();
     }
 
@@ -121,6 +124,8 @@ public class HlavniProgram {
 
         //vychozi pozice
         zelva.turnRight(150);
+
+        zelva.penUp();
     }
 
     public void main(String[] args) {
@@ -135,31 +140,32 @@ public class HlavniProgram {
 
         nakresliPrasatko(zofka);
 
-        zofka.move(300);
+        zofka.move(350);
 
         zofka.penUp();
         zofka.move(100);
         zofka.turnLeft(90);
-        zofka.move(300);
-
-        nakresliOsmiuhelnik(zofka);
-
-        zofka.move(145);
+        zofka.move(400);
         zofka.turnRight(90);
-        zofka.move(250);
 
-        nakresliKruh(zofka);
+//        nakresliOsmiuhelnik(zofka);
 
         zofka.turnRight(90);
         zofka.move(200);
+        zofka.turnLeft(90);
+
+//        nakresliKruh(zofka);
+
+        zofka.turnRight(90);
+        zofka.move(250);
+        zofka.turnLeft(90);
 
         nakresliSlunicko(zofka);
 
-        zofka.penUp();
         zofka.turnRight(180);
-        zofka.move(500);
+        zofka.move(400);
         zofka.turnRight(90);
-        zofka.move(550);
+        zofka.move(400);
         zofka.turnLeft(90);
 
         nakresliDomecek(zofka);
