@@ -261,6 +261,8 @@ public class HlavniProgram {
         nakresliPismenoA(zofka);
 
         nakresliPismenoN(zofka);
+
+        nakresliPismenoA(zofka);
         }
     }
 
