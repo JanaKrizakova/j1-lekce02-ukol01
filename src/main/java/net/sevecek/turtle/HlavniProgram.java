@@ -139,6 +139,26 @@ public class HlavniProgram {
         }
     }
 
+    static void nakresliPismenoJ(Turtle zelva) {
+
+        zelva.penDown();
+
+        zelva.move(20);
+        zelva.turnRight(180);
+        zelva.move(20);
+        zelva.turnLeft(90);
+        zelva.move(40);
+        zelva.turnLeft(90);
+        zelva.move(100);
+        zelva.turnLeft(180);
+        zelva.move(100);
+
+        zelva.penUp();
+        zelva.turnLeft(90);
+        zelva.move(15);
+        zelva.turnLeft(90);
+    }
+
     public void main(String[] args) {
         Turtle zofka;
 
@@ -194,6 +214,10 @@ public class HlavniProgram {
         zofka.move(200);
 
         nakresliDomecek(zofka);
+
+        zofka.move(400);
+
+        nakresliPismenoJ(zofka);
         }
     }
 
