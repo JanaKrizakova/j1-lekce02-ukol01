@@ -80,8 +80,12 @@ public class HlavniProgram {
         zelva.penUp();
     }
 
-    private static void nakresliPaprsek(Turtle zelva) {
-
+    private static void nakresliPaprsek(Turtle zelva, int delkaPaprsku) {
+        zelva.turnLeft(90);
+        zelva.move(delkaPaprsku);
+        zelva.turnLeft(180);
+        zelva.move(delkaPaprsku);
+        zelva.turnLeft(90);
     }
 
     static void nakresliSlunicko(Turtle zelva) {
@@ -91,12 +95,7 @@ public class HlavniProgram {
         for (int i = 0; i < 18; i++) {
             zelva.move(15);
 
-            //nakresli paprsek
-            zelva.turnLeft(90);
-            zelva.move(15);
-            zelva.turnLeft(180);
-            zelva.move(15);
-            zelva.turnLeft(90);
+            nakresliPaprsek(zelva, 30);
 
             zelva.turnRight(20);
         }
@@ -198,6 +197,13 @@ public class HlavniProgram {
         zelva.turnLeft(90);
     }
 
+    static void nakresliJmeno(Turtle turtle) {
+        nakresliPismenoJ(turtle);
+        nakresliPismenoA(turtle);
+        nakresliPismenoN(turtle);
+        nakresliPismenoA(turtle);
+    }
+
     public void main(String[] args) {
         Turtle zofka;
 
@@ -256,13 +262,7 @@ public class HlavniProgram {
 
         zofka.move(400);
 
-        nakresliPismenoJ(zofka);
-
-        nakresliPismenoA(zofka);
-
-        nakresliPismenoN(zofka);
-
-        nakresliPismenoA(zofka);
+        nakresliJmeno(zofka);
         }
-    }
+}
 
