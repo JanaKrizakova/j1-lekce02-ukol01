@@ -128,6 +128,32 @@ public class HlavniProgram {
         zelva.penUp();
     }
 
+    static void nakresliUlici(Turtle zelva) {
+        zelva.turnRight(90);
+        zelva.move(250);
+        zelva.turnRight(90);
+
+        nakresliDomecek(zelva);
+
+        zelva.turnRight(90);
+        zelva.move(250);
+        zelva.turnRight(90);
+
+        nakresliDomecek(zelva);
+
+        zelva.turnRight(90);
+        zelva.move(250);
+        zelva.turnRight(90);
+
+        nakresliDomecek(zelva);
+
+        zelva.turnRight(90);
+        zelva.move(250);
+        zelva.turnRight(90);
+
+        nakresliDomecek(zelva);
+    }
+
     public void main(String[] args) {
         Turtle zofka;
 
@@ -178,31 +204,8 @@ public class HlavniProgram {
 
         nakresliDomecek(zofka);
 
+        nakresliUlici(zofka);
 
-        zofka.turnRight(90);
-        zofka.move(250);
-        zofka.turnRight(90);
-
-        nakresliDomecek(zofka);
-
-        zofka.turnRight(90);
-        zofka.move(250);
-        zofka.turnRight(90);
-
-        nakresliDomecek(zofka);
-
-        zofka.penUp();
-        zofka.turnRight(90);
-        zofka.move(250);
-        zofka.turnRight(90);
-
-        nakresliDomecek(zofka);
-
-        zofka.turnRight(90);
-        zofka.move(250);
-        zofka.turnRight(90);
-
-        nakresliDomecek(zofka);
 
         zofka.turnRight(90);
         zofka.move(300);
