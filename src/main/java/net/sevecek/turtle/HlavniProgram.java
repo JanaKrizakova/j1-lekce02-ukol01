@@ -129,29 +129,14 @@ public class HlavniProgram {
     }
 
     static void nakresliUlici(Turtle zelva) {
-        zelva.turnRight(90);
-        zelva.move(250);
-        zelva.turnRight(90);
 
-        nakresliDomecek(zelva);
+        for (int i = 0; i < 5; i++) {
+            zelva.turnRight(90);
+            zelva.move(250);
+            zelva.turnRight(90);
 
-        zelva.turnRight(90);
-        zelva.move(250);
-        zelva.turnRight(90);
-
-        nakresliDomecek(zelva);
-
-        zelva.turnRight(90);
-        zelva.move(250);
-        zelva.turnRight(90);
-
-        nakresliDomecek(zelva);
-
-        zelva.turnRight(90);
-        zelva.move(250);
-        zelva.turnRight(90);
-
-        nakresliDomecek(zelva);
+            nakresliDomecek(zelva);
+        }
     }
 
     public void main(String[] args) {
@@ -196,16 +181,12 @@ public class HlavniProgram {
 
         nakresliDomecek(zofka);
 
-
         zofka.move(200);
         zofka.turnRight(90);
-        zofka.move(300);
-        zofka.turnRight(90);
-
-        nakresliDomecek(zofka);
+        zofka.move(50);
+        zofka.turnLeft(90);
 
         nakresliUlici(zofka);
-
 
         zofka.turnRight(90);
         zofka.move(300);
